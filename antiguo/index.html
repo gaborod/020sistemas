@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="es" class="bg-bgDark2">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <meta name="generator" content="Astro v4.9.2">
+    <meta name="description" content="Dark themed website template built on AstroJS, designed for fictional startup">
+    <title>Reforma Ingenieria de Sistemas</title>
+
+    <link rel="stylesheet" href="./_astro/index.CWawLqOH.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body class="bg-bgDark2">
+    <main>
+
+        <script>
+            (() => { var e = async t => { await (await t())() }; (self.Astro || (self.Astro = {})).load = e; window.dispatchEvent(new Event("astro:load")); })();; (() => { var A = Object.defineProperty; var g = (i, o, a) => o in i ? A(i, o, { enumerable: !0, configurable: !0, writable: !0, value: a }) : i[o] = a; var d = (i, o, a) => g(i, typeof o != "symbol" ? o + "" : o, a); { let i = { 0: t => m(t), 1: t => a(t), 2: t => new RegExp(t), 3: t => new Date(t), 4: t => new Map(a(t)), 5: t => new Set(a(t)), 6: t => BigInt(t), 7: t => new URL(t), 8: t => new Uint8Array(t), 9: t => new Uint16Array(t), 10: t => new Uint32Array(t) }, o = t => { let [l, e] = t; return l in i ? i[l](e) : void 0 }, a = t => t.map(o), m = t => typeof t != "object" || t === null ? t : Object.fromEntries(Object.entries(t).map(([l, e]) => [l, o(e)])); class y extends HTMLElement { constructor() { super(...arguments); d(this, "Component"); d(this, "hydrator"); d(this, "hydrate", async () => { var b; if (!this.hydrator || !this.isConnected) return; let e = (b = this.parentElement) == null ? void 0 : b.closest("astro-island[ssr]"); if (e) { e.addEventListener("astro:hydrate", this.hydrate, { once: !0 }); return } let c = this.querySelectorAll("astro-slot"), n = {}, h = this.querySelectorAll("template[data-astro-template]"); for (let r of h) { let s = r.closest(this.tagName); s != null && s.isSameNode(this) && (n[r.getAttribute("data-astro-template") || "default"] = r.innerHTML, r.remove()) } for (let r of c) { let s = r.closest(this.tagName); s != null && s.isSameNode(this) && (n[r.getAttribute("name") || "default"] = r.innerHTML) } let p; try { p = this.hasAttribute("props") ? m(JSON.parse(this.getAttribute("props"))) : {} } catch (r) { let s = this.getAttribute("component-url") || "<unknown>", v = this.getAttribute("component-export"); throw v && (s += ` (export ${v})`), console.error(`[hydrate] Error parsing props for component ${s}`, this.getAttribute("props"), r), r } let u; await this.hydrator(this)(this.Component, p, n, { client: this.getAttribute("client") }), this.removeAttribute("ssr"), this.dispatchEvent(new CustomEvent("astro:hydrate")) }); d(this, "unmount", () => { this.isConnected || this.dispatchEvent(new CustomEvent("astro:unmount")) }) } disconnectedCallback() { document.removeEventListener("astro:after-swap", this.unmount), document.addEventListener("astro:after-swap", this.unmount, { once: !0 }) } connectedCallback() { if (!this.hasAttribute("await-children") || document.readyState === "interactive" || document.readyState === "complete") this.childrenConnectedCallback(); else { let e = () => { document.removeEventListener("DOMContentLoaded", e), c.disconnect(), this.childrenConnectedCallback() }, c = new MutationObserver(() => { var n; ((n = this.lastChild) == null ? void 0 : n.nodeType) === Node.COMMENT_NODE && this.lastChild.nodeValue === "astro:end" && (this.lastChild.remove(), e()) }); c.observe(this, { childList: !0 }), document.addEventListener("DOMContentLoaded", e) } } async childrenConnectedCallback() { let e = this.getAttribute("before-hydration-url"); e && await import(e), this.start() } async start() { let e = JSON.parse(this.getAttribute("opts")), c = this.getAttribute("client"); if (Astro[c] === void 0) { window.addEventListener(`astro:${c}`, () => this.start(), { once: !0 }); return } try { await Astro[c](async () => { let n = this.getAttribute("renderer-url"), [h, { default: p }] = await Promise.all([import(this.getAttribute("component-url")), n ? import(n) : () => () => { }]), u = this.getAttribute("component-export") || "default"; if (!u.includes(".")) this.Component = h[u]; else { this.Component = h; for (let f of u.split(".")) this.Component = this.Component[f] } return this.hydrator = p, this.hydrate }, e, this) } catch (n) { console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`, n) } } attributeChangedCallback() { this.hydrate() } } d(y, "observedAttributes", ["props"]), customElements.get("astro-island") || customElements.define("astro-island", y) } })();
+        </script>
+
+        <astro-island uid="navegacion">            
+            <nav class="w-full h-20 flex flex-col justify-center items-center fixed bg-white z-40"
+                aria-label="Main navigation">
+                <div class="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
+                    <div ><a href="#home" aria-label="Home">
+                            <div class="flex justify-start items-center grow basis-0">
+                                <div class="text-black mr-2 text-6xl"><img src="./_astro/LogoInS.BNT0Xcef.svg"
+                                        alt="Logo" width="100" height="100" /></div>
+                                <div class="text-black font-[&#x27;Inter&#x27;] font-bold text-xl">P.C. Ingeniería de sistemas</div>
+                            </div>
+                        </a></div>
+                    <div >
+                        <div class="hidden lg:flex h-full pl-12 pb-2"><a
+                                class="text-black lg:text-base text-2xl leading-6 mr-4 ml-4  2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+                                href="#home" aria-label="Home">Inicio</a><a
+                                class="text-black lg:text-base text-2xl leading-6 mr-4 ml-4  2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+                                href="#motivos" aria-label="Motivos">Motivos</a><a
+                                class="text-black lg:text-base text-2xl leading-6 mr-4 ml-4  2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+                                href="#ejes" aria-label="Ejes">Ejes</a><a
+                                class="text-black lg:text-base text-2xl leading-6 mr-4 ml-4  2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+                                href="#flex" aria-label="Flexibilidad">Flexibilidad</a>
+                            <a class="text-black lg:text-base text-2xl leading-6 mr-4 ml-4  2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+                                href="#beneficios" aria-label="Beneficios">Beneficios</a>
+                            <a class="text-black lg:text-base text-2xl leading-6 mr-4 ml-4  2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+                                href="#preguntas" aria-label="Preguntas">Preguntas</a>
+                            <a class="text-black lg:text-base text-2xl leading-6 mr-4 ml-4  2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+                                href="#transicion" aria-label="Preguntas">Transición</a>
+                        </div>
+                    </div>
+                    <div
+                        class="lg:hidden flex flex-col px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-bgLight2">
+                        <div class="w-5 h-0.5 bg-gray-600 mb-1"></div>
+                        <div class="w-5 h-0.5 bg-gray-600 mb-1"></div>
+                        <div class="w-5 h-0.5 bg-gray-600 "></div>
+                    </div>
+                </div>
+            </nav><!--astro:end-->
+        </astro-island>
+
+        <astro-island uid="inicio">
+            <section
+                class="w-screen flex justify-center items-center pb-4 bg-bgDark1 mb-10 md:mb-10 lg:mb-10 xl:mb-8 2xl:mb-16 hero-bg-gradient sm:pb-16 md:pb-24 lg:pb-0"
+                id="home">
+                <div
+                    class="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center">
+                    <div style="transform:translateY(10px) translateZ(0)">
+                        <h3 class=" text-4xl sm:text-3xl  mb-6 sm:mt-15 mt-10  font-bold">Descubre la
+                            actualizacion curricular</h3>
+                    </div>
+                    
+                    <div style="transform:translateY(10px) translateZ(0)">
+                        <h2
+                            class="text-secondaryText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
+                            Conoce cómo el plan de estudios se adapta a las necesidades actuales del mercado laboral.
+                        </h2>
+                    </div>                    
+                    
+                </div>
+            </section><!--astro:end-->
+        </astro-island>
+
+        <astro-island uid="motivos">
+            <section
+                class="w-full bg-bgDark2 pt-24 -mt-8  mb-8 sm:-mt-8 sm:mb-24 xl:-mt-8 2xl:mt-0    md:pt-[12vw] lg:pt-16"
+                id="motivos">
+                <div>
+                    <div
+                        class="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
+                        <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+                            <div class="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
+                                <h2 class="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">Motivos para la Actualización
+                                    del Plan de Estudios</h2>
+                                <p class="mb-10 text-secondaryText leading-loose">La actualización del plan de estudios
+                                    responde a las demandas actuales de estudiantes, egresados y el mercado laboral.
+                                    Desde el cambio de horas a créditos en 2012, el entorno profesional ha evolucionado
+                                    y requiere una formación más alineada con nuevas áreas como inteligencia artificial
+                                    y ciberseguridad.</p>
+                                <ul class="mb-6 text-primaryText">
+                                    <li class="mb-4 flex">
+                                        <div
+                                            class="rounded-full bg-transparent w-5 h-5 flex justify-center items-center mr-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20px"
+                                                height="20px" class="fill-secondaryColor">
+                                                <path
+                                                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                                                </path>
+                                            </svg>
+                                        </div><span> <b> Plan de estudios actualizado: </b> Enfocado en las
+                                            tendencias actuales del mercado. </span>
+                                    </li>
+                                    <li class="mb-4 flex">
+                                        <div
+                                            class="rounded-full bg-transparent w-5 h-5 flex justify-center items-center mr-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20px"
+                                                height="20px" class="fill-secondaryColor">
+                                                <path
+                                                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                                                </path>
+                                            </svg>
+                                        </div><span> <b> Habilidades prácticas: </b> Formación en herramientas
+                                            y tecnologías de vanguardia. </span>
+                                    </li>
+                                    <li class="mb-4 flex">
+                                        <div
+                                            class="rounded-full bg-transparent w-5 h-5 flex justify-center items-center mr-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20px"
+                                                height="20px" class="fill-secondaryColor">
+                                                <path
+                                                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                                                </path>
+                                            </svg>
+                                        </div><span> <b>Oportunidades laborales: </b> Alta demanda de
+                                            profesionales capacitados en esta área. </span>
+                                    </li>
+                                    <li class="mb-4 flex">
+                                        <div
+                                            class="rounded-full bg-transparent w-5 h-5 flex justify-center items-center mr-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20px"
+                                                height="20px" class="fill-secondaryColor">
+                                                <path
+                                                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                                                </path>
+                                            </svg>
+                                        </div><span> <b>Nuevos ejes de Formación: </b> Proponemos ejes
+                                            especificos de formación como: Redes de Datos, Ingenieria de datos, y muchos
+                                            más. </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center lg:pl-4 xl:px-8">
+                            <div class="mb-8 lg:mb-0 w-full sm:w-1/2 px-2 lg:px-0">
+                                <div class="mb-4 py-3 pl-3 pr-2 rounded"><img
+                                        src="./_astro/crecimientopersonal.BTMXM68U.png" alt="Crecimiento personal"
+                                        class="rounded-xl  main-border-gray mx-auto sm:mx-unset"
+                                        aria-label="Crecimiento personal" /></div>
+                                <div class="py-3 pl-3 pr-2 rounded "><img
+                                        src="./_astro/habilidadespracticas.NYouTj2G.png" alt="Habilidades practicas"
+                                        class="rounded-xl  main-border-gray mx-auto sm:mx-unset"
+                                        aria-label="Habilidades practicas" /></div>
+                            </div>
+                            <div class="w-1/2 lg:mt-20  pt-12 lg:pt-0 px-2 hidden sm:inline-block">
+                                <div class="mb-4 py-3 pl-3 pr-2 rounded-lg "><img
+                                        src="./_astro/oportunidadeslaborales.BbVDE_Kh.png" alt="Oportunidades laborales"
+                                        class="rounded-xl  main-border-gray" aria-label="Oportunidades laborales" />
+                                </div>
+                                <div class="py-3 pl-3 pr-2 rounded-lg "><img
+                                        src="./_astro/areasconocimiento.CR4cyBhk.png" alt="Areas conocimiento"
+                                        class="rounded-xl  main-border-gray" aria-label="Areas conocimiento" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--astro:end-->
+        </astro-island>
+
+        <astro-island uid="motivos2" >
+            <section class="w-full bg-bgDark2 mt-12 sm:mt-24 mb-12 lg:my-20 lg:mb-24 pt-4">
+                <div>
+                    <div
+                        class="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
+                        <div
+                            class="w-11/12 sm:w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 justify-center order-last lg:order-first">
+                            <div class="mb-8 lg:mb-0 w-full px-2 lg:pl-16 flex flex-col justify-center md:pl-8">
+                                <div class="mb-4 py-3 md:pl-3 md:pr-20 lg:pr-12 rounded"></div>
+                                <div class="py-3 md:pl-20 lg:pl-12 md:pr-2 rounded "><img
+                                        src="./_astro/planeacion.DqvPiP26.png" alt="Planeacion"
+                                        class="rounded-xl  main-border-gray" /></div>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
+                            <div class="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
+                                <h2 class="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">Estudio y Análisis para la
+                                    Propuesta de Reforma Curricular</h2>
+                                <p class="mb-12 text-secondaryText leading-loose">Se realizaron 8 reuniones con los
+                                    docentes del proyecto curricular, para analizar y construir la propuesta de reforma,
+                                    considerando:</p>
+                                <ul class="mb-6 text-primaryText">
+                                    <li class="mb-4 flex">
+                                        <div
+                                            class="rounded-full bg-transparent w-5 h-5 flex justify-center items-center mr-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20px"
+                                                height="20px" class="fill-secondaryColor">
+                                                <path
+                                                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                                                </path>
+                                            </svg>
+                                        </div><span>Pertinencia</span>
+                                    </li>
+                                    <li class="mb-4 flex">
+                                        <div
+                                            class="rounded-full bg-transparent w-5 h-5 flex justify-center items-center mr-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20px"
+                                                height="20px" class="fill-secondaryColor">
+                                                <path
+                                                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                                                </path>
+                                            </svg>
+                                        </div><span>Cuerpo de Conocimiento Básico del Ingeniero de
+                                            Sistemas</span>
+                                    </li>
+                                    <li class="mb-4 flex">
+                                        <div
+                                            class="rounded-full bg-transparent w-5 h-5 flex justify-center items-center mr-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20px"
+                                                height="20px" class="fill-secondaryColor">
+                                                <path
+                                                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                                                </path>
+                                            </svg>
+                                        </div><span>Estructura de la malla</span>
+                                    </li>
+                                    <li class="mb-4 flex">
+                                        <div
+                                            class="rounded-full bg-transparent w-5 h-5 flex justify-center items-center mr-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20px"
+                                                height="20px" class="fill-secondaryColor">
+                                                <path
+                                                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                                                </path>
+                                            </svg>
+                                        </div><span>Temas a considerar</span>
+                                    </li>
+                                    <li class="mb-4 flex">
+                                        <div
+                                            class="rounded-full bg-transparent w-5 h-5 flex justify-center items-center mr-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20px"
+                                                height="20px" class="fill-secondaryColor">
+                                                <path
+                                                    d="M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z">
+                                                </path>
+                                            </svg>
+                                        </div><span>Competencias y resultados de aprendizaje, entre otros
+                                            aspectos</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--astro:end-->
+        </astro-island>
+
+        <astro-island uid="ejes" prefix="r4" component-url="./_astro/Ejes.n9YVD4-0.js" component-export="Ejes"
+            renderer-url="./_astro/client.BIGLHmRd.js" props="{}" ssr="" client="load"
+            opts="{&quot;name&quot;:&quot;Ejes&quot;,&quot;value&quot;:true}" await-children="">
+            <section class="lg:mb-16 w-full flex flex-col justify-center items-center bg-bgDark1" id="ejes">
+                <div class="shape-divider-bottom-1665696614"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1200 120" preserveAspectRatio="none" class="bg-bgDark2  fill-bgDark2">
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="bg-bgDark1  fill-bgDark1"></path>
+                    </svg></div>
+                <div>
+                    <div
+                        class="2xl:w-[1150px] xl:w-[1050px] md:w-4/5 flex justify-start bg-bgDark1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row ">
+                        <div class="w-full  flex flex-col lg:mx-unset">
+                            <h2 class="mt-10 mb-8 text-4xl lg:text-5xl block-big-title text-center">Nuevos Ejes de
+                                Formación</h2>
+                            <p class="mb-7 text-secondaryText leading-loose">Los nuevos ejes de formación permiten que
+                                el ingeniero de sistemas graduado adquiera una sólida comprensión en áreas clave como el
+                                desarrollo de software, la gestión de datos, las redes de comunicación, la
+                                administración de proyectos tecnológicos y la inteligencia artificial.</p>
+                            <div class="w-max mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 "><button
+                                    class="w-64 sm:w-70 h-15 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-rojoUd transition"
+                                    aria-label="Live demo">Análisis, diseño y construcción de software</button><button
+                                    class="w-64 sm:w-70 h-15 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-rojoUd transition"
+                                    aria-label="Live demo">Ingeniería de datos</button><button
+                                    class="w-64 sm:w-70 h-15 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-rojoUd transition"
+                                    aria-label="Live demo">Redes de datos</button><button
+                                    class="w-64 sm:w-70 h-15 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-rojoUd transition"
+                                    aria-label="Live demo">Planeación y gestión de proyectos de TI</button><button
+                                    class="w-64 sm:w-70 h-15 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-rojoUd transition"
+                                    aria-label="Live demo">Cibernética e inteligencia artificial</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shape-divider-top-1665696661 w-full"><svg data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"
+                        class="bg-bgDark2 fill-bgDark2">
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="bg-bgDark1 fill-bgDark1"></path>
+                    </svg></div>
+            </section><!--astro:end-->
+        </astro-island>
+
+        <astro-island uid="flexibilidad" prefix="r5" component-url="./_astro/Flexibilidad.C5jVyux3.js"
+            component-export="Flexibilidad" renderer-url="./_astro/client.BIGLHmRd.js" props="{}" ssr="" client="load"
+            opts="{&quot;name&quot;:&quot;Flexibilidad&quot;,&quot;value&quot;:true}" await-children="">
+            <section class="w-screen flex justify-center bg-bgDark2 relative">
+                <div class="absolute -top-16" id="flex"></div>
+                <div class="pb-20 pt-12 bg-bgDark2  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
+                    <div style="opacity:0">
+                        <div class="container mx-auto px-4">
+                            <div class="max-w-6xl mx-auto text-center mb-10">
+                                <h2 class="mt-10 mb-8 text-4xl lg:text-5xl block-big-title text-center">La Flexibilidad
+                                    Del Proyecto</h2>
+                                <h2 class="mt-6 mb-6 text-2xl lg:text-2xl font-bold font-heading text-primaryText">Elige
+                                    la mejor ruta</h2>
+                                <p class="mb-6 text-secondaryText">Comenzando con cursos nivelatorios en producción de
+                                    texto y precálculo, seguido por una base en ciencias básicas y materias
+                                    fundamentales de ingeniería. Luego, los estudiantes avanzan a aplicaciones prácticas
+                                    en la &quot;Ruta de formación&quot;, donde desarrollan competencias específicas y
+                                    logran resultados de aprendizaje. Finalmente, fortalecen habilidades adicionales en
+                                    áreas clave para completar su preparación profesional en ingeniería.</p><label
+                                    class="mx-auto bg-bgDark3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer"><input
+                                        type="checkbox" class="peer appearance-none" /><span
+                                        class="h-8 w-[5.5rem] flex items-center pr-2 bg-bgDark3 after:rounded-lg duration-300 ease-in-out  after:w-[30rem] after:h-10  after:bg-secondaryColor   after:shadow-md after:duration-300 peer-checked:after:translate-x-[5.5rem] cursor-pointer"></span>
+                                    <div class="flex absolute text-primaryText text-sm font-bold ">
+                                        <div class="mr-9 ml-3">Básicas</div>
+                                        <div class="text-gray-400">Rutas</div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="">
+                                <div class="sm:w-full px-4 mb-8 lg:mb-0">
+                                    <div class="p-8 bg-white rounded-3xl mb-10">
+                                        <h3
+                                            class="mb-2 text-xl font-bold font-heading text-bgDarkTransparentLighter text-center">
+                                            Ruta de Formacion</h3>
+                                        <div><img src="./_astro/RutaBasica.CXSOXoai.png" alt="Feature image 1"
+                                                class="rounded-xl  main-border-gray mx-auto sm:mx-unset"
+                                                aria-label="Feature image 1" height="600" /></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--astro:end-->
+        </astro-island>
+
+        <astro-island uid="beneficios" prefix="r6" component-url="./_astro/Beneficios.JeTK85i0.js"
+            component-export="Beneficios" renderer-url="./_astro/client.BIGLHmRd.js" props="{}" ssr="" client="load"
+            opts="{&quot;name&quot;:&quot;Beneficios&quot;,&quot;value&quot;:true}" await-children="">
+            <section class="w-full flex justify-center pt-16 mb-16 lg:mb-32 bg-bgDark1 relative h-full pb-10">
+                <div class="absolute -top-16" id="beneficios"></div>
+                <div class="flex flex-col w-full lg:w-[1150px] justify-center">
+                    <div style="opacity:0">
+                        <div class="block-big-title text-center mb-20 px-8 sm:px-24 md:px-48">Beneficios</div>
+                        <div class="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
+                            <div
+                                class="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 h-80 main-border-gray-darker rounded-xl bg-bgDark3 flex flex-col px-6 py-4">
+                                <div class="flex mb-2"></div>
+                                <div class="content-text-white text-center">Se eliminaron algunas asignaturas, sin que
+                                    ello altere el sello del proyecto curricular.</div>
+                                <div class="flex justify-center mt-4 mb-2 xl:mt-8 xl:mb-4">
+                                    <div><img src="./_astro/borrar.cvlScQ8f.png" alt="Customer avatar" width="80px"
+                                            height="5px" aria-label="John Watkins" /></div>
+                                </div>
+                            </div>
+                            <div
+                                class="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 h-80 main-border-gray-darker rounded-xl bg-bgDark3 flex flex-col px-6 py-4">
+                                <div class="flex mb-2"></div>
+                                <div class="content-text-white text-center">Se fusionaron algunas asignaturas</div>
+                                <div class="flex justify-center mt-4 mb-2 xl:mt-8 xl:mb-4">
+                                    <div><img src="./_astro/combinar.BlSKFm4M.png" alt="Customer avatar" width="80px"
+                                            height="5px" aria-label="John Watkins" /></div>
+                                </div>
+                            </div>
+                            <div
+                                class="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 h-80 main-border-gray-darker rounded-xl bg-bgDark3 flex flex-col px-6 py-4">
+                                <div class="flex mb-2"></div>
+                                <div class="content-text-white text-center">Se ajustaron los créditos de algunas
+                                    asignaturas</div>
+                                <div class="flex justify-center mt-4 mb-2 xl:mt-8 xl:mb-4">
+                                    <div><img src="./_astro/ajuste.6L6WpESD.png" alt="Customer avatar" width="80px"
+                                            height="5px" aria-label="John Watkins" /></div>
+                                </div>
+                            </div>
+                            <div
+                                class="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 h-80 main-border-gray-darker rounded-xl bg-bgDark3 flex flex-col px-6 py-4">
+                                <div class="flex mb-2"></div>
+                                <div class="content-text-white text-center">Se aplicaron las directrices institucionales
+                                    y de facultad sobre opciones de trabajo de grado, nivelatorios, créditos de
+                                    electivas, segunda lengua.</div>
+                                <div class="flex justify-center mt-4 mb-2 xl:mt-8 xl:mb-4">
+                                    <div><img src="./_astro/siguiente-nivel.BGxbqR2O.png" alt="Customer avatar"
+                                            width="80px" height="5px" aria-label="John Watkins" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--astro:end-->
+        </astro-island> 
+
+        <astro-island uid="preguntas">
+            <section class="relative -mt-8 sm:mt-0 pt-12 sm:pt-16 pb-16 bg-blueGray-50 overflow-hidden">
+                <div class="absolute -top-10" id="preguntas"></div>
+                <div>
+                    <div class="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
+                        <div class="md:max-w-4xl mx-auto">
+                            <p class="mb-7 block-subtitle text-center">¿Tienes preguntas?</p>
+                            <h2 class="mb-16 block-big-title text-center">Preguntas más frecuentes</h2>
+                            <div class="mb-11 flex flex-wrap -m-1">
+                                
+                                <div class="w-full p-1">
+                                    <div class="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-bgDark3 main-border-gray-darker mb-4 relative hover:bg-bgDark3Hover cursor-pointer transition">
+                                        <div class="flex flex-col p-2  justify-center items-start">
+                                            <h3 class=" content-title pt-3 sm:pt-0 pr-8 sm:pr-0">¿La actualización curricular afecta el registro calificado o la acreditación de alta calidad?</h3>
+                                            <p class="text-secondaryText pt-4 transition-height duration-300 overflow-hidden max-h-96">
+                                                <p class="mb-4 last:mb-0">No. Todos los procesos de registro calificado o acreditación de alta calidad generan un plan de mejoramiento el cual involucra mantener las fortalezas del proyecto curriculas y mejorar las debilidades detectadas tanto por los pares académicos como los procesos de autoevaluación.</p>
+                                                <p class="mb-4 last:mb-0">En las últimas renovaciones de acreditación de alta calidad, la comunidad académica del proyecto curricular sugurió estas mejoras en el procesos de autoevaluación y de las visitas de los pares académicos.  </p>
+                                                <p class="mb-4 last:mb-0">Una de estas mejoras correspondía a disminuir la cantidad de créditos totales de la malla curricular y ante esta petición se llevó a cabo el proceso de actualización curricular. Derivado de esta solicitud de mejora dicho proceso se realizó en los planes de mejora del proyecto curricular, reportándose al MEN recibiendo la autorización y aval correspondiente bajo el mismo registro calificado sin afectar la acreditación de alta calidad.</p>
+                                            </p>
+                                        </div>
+                                        <div class="absolute top-6 right-4 sm:top-8 sm:right-8"><svg width="28px"
+                                            height="30px" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="transition-all duration-500  rotate-[270deg]">
+                                            <path d="M4.16732 12.5L10.0007 6.66667L15.834 12.5" stroke="#f6b201"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg></div>
+                                    </div>
+                                </div>
+                          
+                                
+                                <div class="w-full p-1">
+                                    <div class="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-bgDark3 main-border-gray-darker mb-4 relative hover:bg-bgDark3Hover cursor-pointer transition">
+                                        <div class="flex flex-col p-2  justify-center items-start">
+                                            <h3 class=" content-title pt-3 sm:pt-0 pr-8 sm:pr-0">¿Cómo se observa en la
+                                                estructura curricular?</h3>
+                                            <p
+                                                class="text-secondaryText pt-4 transition-height duration-300 overflow-hidden max-h-96">
+                                            <p class="mb-4 last:mb-0">La estructura curricular está distribuida en 9
+                                                semestres; sin embargo, de acuerdo con el marco legal vigente, el
+                                                estudiante podría completarla en 8 semestres.</p>
+                                            <p class="mb-4 last:mb-0">La cantidad de créditos disminuye en estos 9
+                                                semestres, conservando factores diferenciadores como el Grupo de trabajo
+                                                y el Grupo de investigación.</p>
+                                            <p class="mb-4 last:mb-0">El eje principal de la reforma es el estudiante,
+                                                ampliándose el abanico de alternativas de profundización, con opciones
+                                                actualizadas y una mayor flexibilidad para que elija una ruta de
+                                                formación acorde a sus intereses y propósitos profesionales.</p>
+                                            <p class="mb-4 last:mb-0">Las improntas institucionales se mantienen,
+                                                respetando los valores y la identidad de la institución.</p>
+                                            </p>
+                                        </div>
+                                        <div class="absolute top-6 right-4 sm:top-8 sm:right-8"><svg width="28px"
+                                            height="30px" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="transition-all duration-500  rotate-[270deg]">
+                                            <path d="M4.16732 12.5L10.0007 6.66667L15.834 12.5" stroke="#f6b201"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg></div>
+                                    </div>
+                                </div>
+
+                                <div class="w-full p-1">
+                                    <div
+                                        class="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-bgDark3 main-border-gray-darker mb-4 relative hover:bg-bgDark3Hover cursor-pointer transition">
+                                        <div class="flex flex-col p-2  justify-center items-start">
+                                            <h3 class=" content-title pt-3 sm:pt-0 pr-8 sm:pr-0">¿Qué pasa cuando el
+                                                estudiante termina el 5to semestre?</h3>
+                                            <p
+                                                class="text-secondaryText pt-4 transition-height duration-300 overflow-hidden max-h-0">
+                                            <p class="mb-4 last:mb-0">El estudiante de Ingeniería de Sistemas
+                                                seleccionará uno de los ejes de formación sobre el cual desea realizar
+                                                la profundización profesional.</p>
+                                            </p>
+                                        </div>
+                                        <div class="absolute top-6 right-4 sm:top-8 sm:right-8"><svg width="28px"
+                                                height="30px" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="transition-all duration-500  rotate-[270deg]">
+                                                <path d="M4.16732 12.5L10.0007 6.66667L15.834 12.5" stroke="#f6b201"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+
+                                <div class="w-full p-1">
+                                    <div
+                                        class="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-bgDark3 main-border-gray-darker mb-4 relative hover:bg-bgDark3Hover cursor-pointer transition">
+                                        <div class="flex flex-col p-2  justify-center items-start">
+                                            <h3 class=" content-title pt-3 sm:pt-0 pr-8 sm:pr-0">¿Cuánto tiempo tengo para hacer la transición?</h3>
+                                            <p
+                                                class="text-secondaryText pt-4 transition-height duration-300 overflow-hidden max-h-0">
+                                            <p class="mb-4 last:mb-0">La transición para los estudiantes antiguos está contemplada para realizarse en 3 momentos: antes del inicio de los periodos académicos 2025-1, 2025-3 y 2026-1.
+                                                Esto quiere decir que el proceso de transición solo se efectuará durante el año 2025.
+                                            </p>
+                                            </p>
+                                        </div>
+                                        <div class="absolute top-6 right-4 sm:top-8 sm:right-8"><svg width="28px"
+                                                height="30px" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="transition-all duration-500  rotate-[270deg]">
+                                                <path d="M4.16732 12.5L10.0007 6.66667L15.834 12.5" stroke="#f6b201"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+
+                                <div class="w-full p-1">
+                                    <div
+                                        class="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-bgDark3 main-border-gray-darker mb-4 relative hover:bg-bgDark3Hover cursor-pointer transition">
+                                        <div class="flex flex-col p-2  justify-center items-start">
+                                            <h3 class=" content-title pt-3 sm:pt-0 pr-8 sm:pr-0">¿Qué es una ruta de formación (RF)?</h3>
+                                            <p class="text-secondaryText pt-4 transition-height duration-300 overflow-hidden max-h-0">
+                                                <p class="mb-4 last:mb-0">Son las alternativas que elige el estudiante para desarrollar o fortalecer un área de conocimiento en su formación profesional.   </p>
+                                                <p class="mb-4 last:mb-0">Es el eje principal de la actualización curricular donde el estudiante
+                                                    elige dentro de un abanico de alternativas de profundización actualizadas, 
+                                                    una opción acorde a sus intereses y propósitos como futuro profesional. 
+                                                    Estas opciones son el propósito de la flexibilidad curricular.  </p>
+                                                <p class="mb-4 last:mb-0">  </p>
+
+                                            </p>
+                                        </div>
+                                        <div class="absolute top-6 right-4 sm:top-8 sm:right-8"><svg width="28px"
+                                                height="30px" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="transition-all duration-500  rotate-[270deg]">
+                                                <path d="M4.16732 12.5L10.0007 6.66667L15.834 12.5" stroke="#f6b201"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="w-full p-1">
+                                    <div
+                                        class="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-bgDark3 main-border-gray-darker mb-4 relative hover:bg-bgDark3Hover cursor-pointer transition">
+                                        <div class="flex flex-col p-2  justify-center items-start">
+                                            <h3 class=" content-title pt-3 sm:pt-0 pr-8 sm:pr-0">¿Qué es Curso
+                                                obligatorio RF?</h3>
+                                            <p
+                                                class="text-secondaryText pt-4 transition-height duration-300 overflow-hidden max-h-0">
+                                            <p class="mb-4 last:mb-0">Cursos obligatorios, de único espacio académico,
+                                                necesario para fundamentar la RF seleccionada.</p>
+                                            </p>
+                                        </div>
+                                        <div class="absolute top-6 right-4 sm:top-8 sm:right-8"><svg width="28px"
+                                                height="30px" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="transition-all duration-500  rotate-[270deg]">
+                                                <path d="M4.16732 12.5L10.0007 6.66667L15.834 12.5" stroke="#f6b201"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="w-full p-1">
+                                    <div
+                                        class="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-bgDark3 main-border-gray-darker mb-4 relative hover:bg-bgDark3Hover cursor-pointer transition">
+                                        <div class="flex flex-col p-2  justify-center items-start">
+                                            <h3 class=" content-title pt-3 sm:pt-0 pr-8 sm:pr-0">¿Qué es Curso electivo
+                                                RF?</h3>
+                                            <p
+                                                class="text-secondaryText pt-4 transition-height duration-300 overflow-hidden max-h-0">
+                                            <p class="mb-4 last:mb-0">Curso electivo, con varios espacios académicos,
+                                                donde el estudiante selecciona una de las propuestas temáticas, sobre la
+                                                cual requiere fortalecer su formación en la RF seleccionada.</p>
+                                            </p>
+                                        </div>
+                                        <div class="absolute top-6 right-4 sm:top-8 sm:right-8"><svg width="28px"
+                                                height="30px" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="transition-all duration-500  rotate-[270deg]">
+                                                <path d="M4.16732 12.5L10.0007 6.66667L15.834 12.5" stroke="#f6b201"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="w-full p-1">
+                                    <div
+                                        class="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-bgDark3 main-border-gray-darker mb-4 relative hover:bg-bgDark3Hover cursor-pointer transition">
+                                        <div class="flex flex-col p-2  justify-center items-start">
+                                            <h3 class=" content-title pt-3 sm:pt-0 pr-8 sm:pr-0">¿Qué es Curso electivo flexible RF?</h3>
+                                            <p
+                                                class="text-secondaryText pt-4 transition-height duration-300 overflow-hidden max-h-0">
+                                            <p class="mb-4 last:mb-0">Son cursos electivos pertenecientes a otra RF, con varios
+                                                espacios académicos, donde el estudiante busca articular los conocimientos de otras
+                                                áreas y el cual selecciona una de las
+                                                propuestas temáticas, sobre la cual quisiera complementar su formación
+                                                en la RF seleccionada o su proceso de investigación en consonancia con sus intereses y
+                                                propósitos como futuro profesional.</p>
+                                            </p>
+                                            
+                                        </div>
+                                        <div class="absolute top-6 right-4 sm:top-8 sm:right-8"><svg width="28px"
+                                                height="30px" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="transition-all duration-500  rotate-[270deg]">
+                                                <path d="M4.16732 12.5L10.0007 6.66667L15.834 12.5" stroke="#f6b201"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--astro:end-->
+        </astro-island>
+
+        <astro-island uid="transicion" prefix="r9" >            
+            <section class=" relative -mt-8 sm:mt-0 pt-12 sm:pt-16 pb-16 bg-blueGray-50 " id="transicion">               
+                <h2 class="mb-16 block-big-title text-center">Transición</h2>
+                <div class="md:max-w-4xl mx-auto flex flex-col p-2  ">                        
+                    <h3 class=" content-title pt-3 sm:pt-0 pr-8 sm:pr-0">Señor estudiante, si usted desea aplicar al cambio de plan de estudios tenga en cuenta que:</h3>
+                    <p
+                        class="text-secondaryText pt-4 transition-height duration-300 overflow-hidden max-h-96">
+                    <p class="mb-4 last:mb-0">Si quiere saber un aproximado de los créditos que aplicarían a la transición, ingrese al simulador para saber cuantos créditos harían parte del la transición al pénsum actualizado.</p>
+                    <p class="mb-4 last:mb-0">Tenga en cuenta que esta simulación es una aproximación ya que cada caso es particular.</p>
+                    <p class="mb-4 last:mb-0">El proyecto curricular asigna un profesor consejero a cada estudiante: consulte con su consejero la conveniencia del cambio de plan de estudios.</p>
+                    <p class="mb-4 last:mb-0">Para los estudiantes actualmente matriculados, el proceso de cambio de plan de estudios es VOLUNTARIO. Si no desea cambiar al plan de estudios actual, el proyecto curricular garantizará la culminación de sus estudios con el plan de estudios con el que ingresó el estudiante.</p>
+                    <p class="mb-4 last:mb-0">El título obtenido seguirá siendo “Ingeniero de Sistemas”, y los ejes de formación permitirán al estudiante fortalecer un área específica de su formación profesional y articular conocimientos de distintas áreas según sus intereses.</p> 
+                    <p class="mb-4 last:mb-0">Las condiciones de permanencia no cambian; por tanto, sigue rigiéndose lo reglamentado en el acuerdo 004 del 11 de agosto de 2011, título I: de la permanencia de los estudiantes de pregrado.</p>   
+                    <p class="mb-4 last:mb-0">Los estudiantes nuevos o que reingresen al proyecto curricular, así como los que voluntariamente solicitaron el cambio al plan de estudios actualizado, se regirán con su plan de estudios actual hasta la culminación de sus estudios.</p>
+                    <p class="mb-4 last:mb-0">Si está convencido de la convenierncia de pasar al plan de estudios actualizado, descarge el 
+                        <a href="Formulario_solicitud_cambio_de_plan_actualizado.pdf">FORMULARIO</a>, 
+                        diligencielo y envíelo desde su correo institucional al 
+                        <a href="mailto:ingsistemas@udistrital.edu.co">correo del Proyecto curricular</a> 
+                        con el asunto "CAMBIO PLAN DE ESTUDIOS"</p>       
+                        <p></p>             
+                        <h2 id="formulario"><a href="Formulario_solicitud_cambio_de_plan_actualizado.pdf">FORMULARIO</a></h2>
+                </div>
+                
+                <div style="transform:translateY(10px) translateZ(0)">
+                    <div class="flex flex-col gap-2 sm:flex-row mt-14 mb-10 sm:mb-10 justify-center">
+                        <a href="simulador/index.html" rel="noopener noreferrer"><button
+                                class="w-64 sm:w-52 h-12 rounded-xl font-bold text-primaryText border border-solid  flex justify-center items-center cursor-pointer bg-bgDark2 hover:bg-bgDark3 border-secondaryColor transition"
+                                aria-label="Live demo">Simulador</button></a>
+                    </div>
+                </div>
+            </section>
+        </astro-island>
+
+
+        <astro-island uid="botonUp" prefix="r10" component-url="./_astro/ScrollUpButton.DJp3BbZl.js"
+            component-export="ScrollUpButton" renderer-url="./_astro/client.BIGLHmRd.js" props="{}" ssr="" client="load"
+            opts="{&quot;name&quot;:&quot;ScrollUpButton&quot;,&quot;value&quot;:true}"></astro-island>
+
+    </main>
+</body>
+
+</html>
