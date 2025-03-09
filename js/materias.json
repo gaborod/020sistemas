@@ -1,0 +1,647 @@
+
+{
+    "idPensum": 335,
+    "resolucion": "077 de 2023",
+    "fecha": "diciembre de 2023",
+    "active": true,
+    "creditos": 150,
+    "niveles": [
+      {
+        "nombre": "Nivel 1",
+        "creditos": 16,
+        "trabajoDirecto":20,
+        "trabajoColaborativo":12,
+        "trabajoAutonomo":16,        
+        "materias": [
+            {
+                "tipo" : "CB",
+                "codigo": "25941",
+                "nombre": "CÁLCULO DIFERENCIAL",
+                "creditos": 3,
+                "trabajoDirecto":4,
+                "trabajoColaborativo":2,
+                "trabajoAutonomo":3,
+                "ref" : "pdf/CalculoDiferencial.pdf"
+            },
+            {
+                "tipo" : "BI",
+                "codigo": "26130",
+                "nombre": "MATEMÁTICAS DISCRETAS",
+                "creditos": 2,
+                "trabajoDirecto":2,
+                "trabajoColaborativo":2,
+                "trabajoAutonomo":2,
+                "ref" : "pdf/MatematicasDiscretas.pdf"
+            },
+            {
+              "tipo" : "CB",
+              "codigo": "25942",
+              "nombre": "FÍSICA NEWTONIANA",
+              "creditos": 3,
+              "trabajoDirecto":4,
+              "trabajoColaborativo":2,
+              "trabajoAutonomo":3,
+              "ref" : "pdf/FisicaNewtoniana.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "2",
+            "nombre": "PROGRAMACIÓN BÁSICA",
+            "creditos": 3,
+            "trabajoDirecto":2,
+            "trabajoColaborativo":4,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/ProgramacionBasica.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26131",
+            "nombre": "ARQUITECTURA DE COMPUTADORES",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/ArquitecturaDeComputadores.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "25943",
+            "nombre": "SEMINARIO DE INTRODUCCIÓN A INGENIERÍA",
+            "creditos": 1,
+            "trabajoDirecto":2,
+            "trabajoColaborativo":0,
+            "trabajoAutonomo":1,
+            "ref" : "pdf/SeminarioDeIntroduccionAIngenieria.pdf"
+          },
+          {
+            "tipo" : "VA"            
+          },
+          {
+            "tipo" : "CO",
+            "codigo": "4",
+            "nombre": "CÁTEDRA FRANCISCO JOSÉ DE CALDAS",
+            "creditos": 1,
+            "trabajoDirecto":2,
+            "trabajoColaborativo":0,
+            "trabajoAutonomo":1,
+            "ref" : "pdf/CatedraFranciscoJoseDeCaldas.pdf"
+          }
+        ]
+      },
+      {
+        "nombre": "Nivel 2",
+        "creditos": 17,
+        "trabajoDirecto":22,
+        "trabajoColaborativo":12,
+        "trabajoAutonomo":17,        
+        "materias": [
+          {
+            "tipo" : "CB",
+            "codigo": "7",
+            "nombre": "CÁLCULO INTEGRAL",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/CalculoIntegral.pdf"
+          },
+          {
+            "tipo" : "CB",
+            "codigo": "9",
+            "nombre": "ÁLGEBRA LINEAL",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/AlgebraLineal.pdf"
+          },
+          {
+            "tipo" : "CB",
+            "codigo": "25944",
+            "nombre": "ELECTROMAGNETISMO",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/Electromagnetismo.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "10",
+            "nombre": "PROGRAMACIÓN ORIENTADA A OBJETOS",
+            "creditos": 3,
+            "trabajoDirecto":2,
+            "trabajoColaborativo":4,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/ProgramacionOrientadaAObjetos.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "409",
+            "nombre": "TEORÍA DE SISTEMAS",
+            "creditos": 2,
+            "trabajoDirecto":3,
+            "trabajoColaborativo":1,
+            "trabajoAutonomo":2,
+            "ref" : "pdf/TeoriaDeSistemas.pdf"
+          },
+          {
+            "tipo" : "VA"            
+          },
+          {
+            "tipo" : "CO",
+            "codigo": "8",
+            "nombre": "HISTORIA Y CULTURA COLOMBIANA",
+            "creditos": 2,
+            "trabajoDirecto":3,
+            "trabajoColaborativo":1,
+            "trabajoAutonomo":2,
+            "ref" : "pdf/HistoriaYCulturaColombiana.pdf"
+          },
+          {
+            "tipo" : "CO",
+            "codigo": "12",
+            "nombre": "CÁTEDRA DEMOCRACIA Y CIUDADANÍA",
+            "creditos": 1,
+            "trabajoDirecto":2,
+            "trabajoColaborativo":0,
+            "trabajoAutonomo":1,
+            "ref" : "pdf/CatedraDemocraciaYCiudadania.pdf"
+          }
+        ]
+      },
+      {
+        "nombre": "Nivel 3",
+        "creditos": 16,
+        "trabajoDirecto":19,
+        "trabajoColaborativo":13,
+        "trabajoAutonomo":16,        
+        "materias": [
+          {
+            "tipo" : "CB",
+            "codigo": "16",
+            "nombre": "CÁLCULO MULTIVARIADO",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/CalculoMultivariado.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26132",
+            "nombre": "PROBABILIDAD Y ESTADÍSTICA",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/ProbabilidadYEstadistica.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "423",
+            "nombre": "CIENCIAS DE LA COMPUTACIÓN I",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/CienciasDeLaComputacionI.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "410",
+            "nombre": "PROGRAMACIÓN AVANZADA",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/ProgramacionAvanzada.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26133",
+            "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS",
+            "creditos": 2,
+            "trabajoDirecto":3,
+            "trabajoColaborativo":1,
+            "trabajoAutonomo":2,
+            "ref" : "pdf/AnalisisYDisenoDeSistemas.pdf"
+          },
+          
+          {
+            "tipo" : "EX",
+            "codigo": "",
+            "nombre": "EXTRÍNSECA I",
+            "creditos": 1,
+            "ref" : "electiva/extrinsecas/index.html"
+          },
+          {
+            "tipo" : "CO",
+            "codigo": "26134",
+            "nombre": "GRUPO DE TRABAJO",
+            "creditos": 1,
+            "trabajoDirecto":0,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":1,
+            "ref" : ""
+          }
+        ]
+      },
+      {
+        "nombre": "Nivel 4",
+        "creditos": 17,
+        "trabajoDirecto":24,
+        "trabajoColaborativo":10,
+        "trabajoAutonomo":17,        
+        "materias": [
+          {
+            "tipo" : "CB",
+            "codigo": "88",
+            "nombre": "ECUACIONES DIFERENCIALES",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/EcuacionesDiferenciales.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26135",
+            "nombre": "MÉTODOS NUMÉRICOS",
+            "creditos": 2,
+            "trabajoDirecto":2,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":2,
+            "ref" : "pdf/MetodosNumericos.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26136",
+            "nombre": "CIENCIAS DE LA COMPUTACIÓN II",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/CienciasDeLaComputacionII.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26137",
+            "nombre": "MODELOS DE PROGRAMACIÓN",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/ModelosDeProgramacion.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26138",
+            "nombre": "INVESTIGACIÓN DE OPERACIONES I",
+            "creditos": 2,
+            "trabajoDirecto":2,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":2,
+            "ref" : "pdf/InvestigacionDeOperacionesI.pdf"
+          },          
+          {
+            "tipo" : "EX",
+            "codigo": "",
+            "nombre": "EXTRÍNSECA II",
+            "creditos": 2,
+            "ref" : "electiva/extrinsecas/index.html"
+          },
+          {
+            "tipo" : "CO",
+            "codigo": "47",
+            "nombre": "ECONOMÍA",
+            "creditos": 2,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":0,
+            "trabajoAutonomo":2,
+            "ref" : "pdf/Economia.pdf"
+          }
+        ]
+      },
+      {
+        "nombre": "Nivel 5",
+        "creditos": 17,
+        "trabajoDirecto":22,
+        "trabajoColaborativo":12,
+        "trabajoAutonomo":17,        
+        "materias": [
+          {
+            "tipo" : "BI",
+            "codigo": "415",
+            "nombre": "MATEMÁTICAS ESPECIALES",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/MatematicasEspeciales.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "437",
+            "nombre": "FUNDAMENTOS DE INGENIERÍA DE SOFTWARE",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/FundamentosDeIngenieriaDeSoftware.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26139",
+            "nombre": "FUNDAMENTOS DE REDES DE COMUNICACIONES",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/FundamentosDeRedesDeComunicaciones.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26140",
+            "nombre": "BASES DE DATOS",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/BasesDeDatos.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26141",
+            "nombre": "FUNDAMENTOS DE CIENCIA DE SISTEMAS",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/FundamentosDeCienciaDeSistemas.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26142",
+            "nombre": "INVESTIGACIÓN DE OPERACIONES II",
+            "creditos": 3,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":3,
+            "ref" : "pdf/InvestigacionDeOperacionesII.pdf"
+          }
+        ]
+      },
+      {
+        "nombre": "Nivel 6",
+        "creditos": 17,
+        "trabajoDirecto":18,
+        "trabajoColaborativo":8,
+        "trabajoAutonomo":25,        
+        "materias": [
+          {
+            "tipo" : "BI",
+            "codigo": "26143",
+            "nombre": "PROCESOS ESTOCÁSTICOS",
+            "creditos": 3,
+            "trabajoDirecto":2,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":5,
+            "ref" : "pdf/ProcesosEstocasticos.pdf"
+          },
+          {
+            "tipo" : "AI",
+            "codigo": "",
+            "nombre": "CURSO OBLIGATORIO I RF",
+            "creditos": 3,
+            "ref" : ""
+          },
+          {
+            "tipo" : "AI",
+            "codigo": "",
+            "nombre": "CURSO OBLIGATORIO II RF",
+            "creditos": 3,
+            "ref" : ""
+          },
+          {
+            "tipo" : "AI",
+            "codigo": "",
+            "nombre": "CURSO ELECTIVO FLEXIBLE I RF",
+            "creditos": 4,
+            "ref" : ""
+          },
+          {
+            "tipo" : "VA"
+          },
+          {
+            "tipo" : "EX",
+            "codigo": "",
+            "nombre": "EXTRÍNSECA III",
+            "creditos": 2,
+            "ref" : "electiva/extrinsecas/index.html"
+          },
+          {
+            "tipo" : "CO",
+            "codigo": "53",
+            "nombre": "INGENIERÍA ECONÓMICA",
+            "creditos": 2,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":0,
+            "trabajoAutonomo":2,
+            "ref" : "pdf/IngenieriaEconomica.pdf"
+          }
+        ]
+      },
+      {
+        "nombre": "Nivel 7",
+        "creditos": 17,
+        "trabajoDirecto":14,
+        "trabajoColaborativo":12,
+        "trabajoAutonomo":25,        
+        "materias": [
+          {
+            "tipo" : "VA"            
+          },
+          {
+            "tipo" : "AI",
+            "codigo": "",
+            "nombre": "CURSO OBLIGATORIO III RF",
+            "creditos": 3,
+            "ref" : ""
+          },
+          {
+            "tipo" : "AI",
+            "codigo": "",
+            "nombre": "CURSO OBLIGATORIO IV RF",
+            "creditos": 3,
+            "ref" : ""
+          },
+          {
+            "tipo" : "AI",
+            "codigo": "",
+            "nombre": "CURSO ELECTIVO FLEXIBLE II RF",
+            "creditos": 4,
+            "ref" : ""
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26148",
+            "nombre": "SISTEMAS OPERATIVOS",
+            "creditos": 3,
+            "trabajoDirecto":2,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":5,
+            "ref" : "pdf/SistemasOperativos.pdf"
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26149",
+            "nombre": "TEORÍA DE LA INFORMACIÓN",
+            "creditos": 2,
+            "trabajoDirecto":2,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":2,
+            "ref" : "pdf/TeoriaDeLaInformacion.pdf"
+          },
+          {
+            "tipo" : "VA"            
+          },
+          {
+            "tipo" : "CO",
+            "codigo": "26150",
+            "nombre": "METODOLOGÍA DE LA INVESTIGACIÓN",
+            "creditos": 2,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":0,
+            "trabajoAutonomo":2,
+            "ref" : "pdf/MetodologiaDeLaInvestigacion.pdf"
+          }
+        ]
+      },
+      {
+        "nombre": "Nivel 8",
+        "creditos": 16,
+        "trabajoDirecto":16,
+        "trabajoColaborativo":8,
+        "trabajoAutonomo":24,        
+        "materias": [
+          {
+            "tipo" : "VA"            
+          },
+          {
+            "tipo" : "AI",
+            "codigo": "",
+            "nombre": "CURSO ELECTIVO I RF",
+            "creditos": 4,
+            "ref" : ""
+          },
+          {
+            "tipo" : "AI",
+            "codigo": "",
+            "nombre": "CURSO ELECTIVO II RF",
+            "creditos": 4,
+            "ref" : ""
+          },
+          {
+            "tipo" : "AI",
+            "codigo": "",
+            "nombre": "CURSO ELECTIVO FLEXIBLE III RF",
+            "creditos": 4,
+            "ref" : ""
+          },
+          {
+            "tipo" : "VA"          
+          },
+          {
+            "tipo" : "CO",
+            "codigo": "25956",
+            "nombre": "FORMULACIÓN Y EVALUACIÓN DE PROYECTOS",
+            "creditos": 2,
+            "trabajoDirecto":4,
+            "trabajoColaborativo":0,
+            "trabajoAutonomo":2,
+            "ref" : "pdf/FormulacionYEvaluacionDeProyectos.pdf"
+          },
+          {
+            "tipo" : "CO",
+            "codigo": "26151",
+            "nombre": "GRUPO DE INVESTIGACIÓN",
+            "creditos": 1,
+            "trabajoDirecto":0,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":1,
+            "ref" : "https://pi.udistrital.edu.co/Unidad-Ingenieria/investigacion?proyecto=2"            
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26152",
+            "nombre": "TRABAJO DE GRADO I",
+            "creditos": 1,
+            "trabajoDirecto":0,
+            "trabajoColaborativo":0,
+            "trabajoAutonomo":3,
+            "ref" : "https://sgral.udistrital.edu.co/xdata/ca/acu_2015-038.pdf"
+          }
+        ]
+      },{
+        "nombre": "Nivel 9",
+        "creditos": 17,
+        "trabajoDirecto":14,
+        "trabajoColaborativo":8,
+        "trabajoAutonomo":29,        
+        "materias": [
+          {
+            "tipo" : "VA"            
+          },
+          {
+            "tipo" : "AI",
+            "codigo": "",
+            "nombre": "CURSO ELECTIVO III RF",
+            "creditos": 4,
+            "ref" : ""
+          },
+          {
+            "tipo" : "AI",
+            "codigo": "",
+            "nombre": "CURSO ELECTIVO IV RF",
+            "creditos": 4,
+            "ref" : ""
+          },
+          {
+            "tipo" : "AI",
+            "codigo": "",
+            "nombre": "CURSO ELECTIVO FLEXIBLE IV RF",
+            "creditos": 4,
+            "ref" : ""
+          },
+          {
+            "tipo" : "VA"          
+          },
+          {
+            "tipo" : "VA"   
+          },
+          {
+            "tipo" : "CO",
+            "codigo": "18",
+            "nombre": "ÉTICA Y BIOÉTICA",
+            "creditos": 2,
+            "trabajoDirecto":2,
+            "trabajoColaborativo":2,
+            "trabajoAutonomo":2,
+            "ref" : "pdf/EticaYBioetica.pdf"            
+          },
+          {
+            "tipo" : "BI",
+            "codigo": "26153",
+            "nombre": "TRABAJO DE GRADO II",
+            "creditos": 3,
+            "trabajoDirecto":0,
+            "trabajoColaborativo":0,
+            "trabajoAutonomo":9,
+            "ref" : "https://sgral.udistrital.edu.co/xdata/ca/acu_2015-038.pdf"
+          }
+        ]
+      }    
+    ]
+  }
+  

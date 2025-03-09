@@ -1,0 +1,272 @@
+[
+    {
+        "rutaFormacion": "General",
+        "materias": [
+            {
+                "tipo": "AI",
+                "codigo": "",
+                "nombre": "CURSO OBLIGATORIO I RF",
+                "creditos": 3,
+                "trabajoDirecto": "0",
+                "trabajoColaborativo": "0",
+                "trabajoAutonomo": "0",
+                "ref": ""
+            },
+            {
+                "tipo": "AI",
+                "codigo": "",
+                "nombre": "CURSO OBLIGATORIO II RF",
+                "creditos": 3,
+                "trabajoDirecto": "0",
+                "trabajoColaborativo": "0",
+                "trabajoAutonomo": "0",
+                "ref": ""
+            },
+            {
+                "tipo": "AI",
+                "codigo": "",
+                "nombre": "CURSO OBLIGATORIO III RF",
+                "creditos": 3,
+                "trabajoDirecto": "0",
+                "trabajoColaborativo": "0",
+                "trabajoAutonomo": "0",
+                "ref": ""
+            },
+            {
+                "tipo": "AI",
+                "codigo": "",
+                "nombre": "CURSO OBLIGATORIO IV RF",
+                "creditos": 3,
+                "trabajoDirecto": "0",
+                "trabajoColaborativo": "0",
+                "trabajoAutonomo": "0",
+                "ref": ""
+            }
+        ]
+    },
+    {
+        "rutaFormacion": "Análisis, diseño y construcción de software",
+        "materias": [
+            {
+                "tipo": "AI",
+                "codigo": "20154",
+                "nombre": "INGENIERÍA DE REQUERIMIENTOS",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/IngenieriaDeRequerimientos.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26155",
+                "nombre": "DISEÑO DE SOFTWARE",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/DisenoDeSoftware.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26156",
+                "nombre": "CONSTRUCCIÓN DE SOFTWARE",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/ConstruccionDeSoftware.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26157",
+                "nombre": "CALIDAD DE SOFTWARE",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/CalidadDeSoftware.pdf"
+            }            
+        ]
+    },
+    {
+        "rutaFormacion": "Ingeniería de datos",
+        "materias": [
+            {
+                "tipo": "AI",
+                "codigo": "26158",
+                "nombre": "ESTADÍSTICA MULTIDIMENSIONAL",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/EstadisticaMultidimensional.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26159",
+                "nombre": "BASES DE DATOS AVANZADAS",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/BasesDeDatosAvanzadas.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26160",
+                "nombre": "MINERÍA DE DATOS",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/MineriaDeDatos.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26161",
+                "nombre": "PROGRAMACIÓN PARA ANÁLISIS DE DATOS",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/ProgramacionParaAnalisisDeDatos.pdf"
+            }            
+        ]
+    },
+    {
+        "rutaFormacion": "Ciencia de sistemas",
+        "materias": [
+            {
+                "tipo": "AI",
+                "codigo": "26170",
+                "nombre": "INTELIGENCIA ARTIFICIAL I",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/InteligenciaArtificialI.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26171",
+                "nombre": "CIBERNÉTICA I",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/CiberneticaI.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26172",
+                "nombre": "INTELIGENCIA ARTIFICIAL II",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/InteligenciaArtificialII.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26173",
+                "nombre": "CIBERNÉTICA II",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/CiberneticaII.pdf"
+            }            
+        ]
+    },
+    {
+        "rutaFormacion": "Redes de datos",
+        "materias": [
+            {
+                "tipo": "AI",
+                "codigo": "26162",
+                "nombre": "REDES DE DATOS I",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/RedesDeDatosI.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26163",
+                "nombre": "REDES DE DATOS II",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/RedesDeDatosII.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26164",
+                "nombre": "REDES DE DATOS III",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/RedesDeDatosIII.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26165",
+                "nombre": "REDES DE DATOS IV",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/RedesDeDatosIV.pdf"
+            }            
+        ]
+    },
+    {
+        "rutaFormacion": "Planeación y gestión de proyectos de TI",
+        "materias": [
+            {
+                "tipo": "AI",
+                "codigo": "26166",
+                "nombre": "PLANEACIÓN ESTRATÉGICA",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/PlaneacionEstrategica.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26167",
+                "nombre": "FUNDAMENTOS DE ARQUITECTURA EMPRESARIAL",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/FundamentosDeArquitecturaEmpresarial.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26168",
+                "nombre": "GESTIÓN DE PROYECTOS INFORMÁTICOS",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/GestionDeProyectosInformaticos.pdf"
+            },
+            {
+                "tipo": "AI",
+                "codigo": "26169",
+                "nombre": "GOBIERNO Y GESTIÓN DE TI",
+                "creditos": 3,
+                "trabajoDirecto": "2",
+                "trabajoColaborativo": "2",
+                "trabajoAutonomo": "5",
+                "ref": "pdf/GobiernoYGestionDeTI.pdf"
+            }            
+        ]
+    }
+]

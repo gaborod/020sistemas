@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Pensum de materias de Ingeniería de Sistemas de la Universidad Distrital Francisco José de Caldas">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<meta name="astro-view-transitions-enabled" content="true">
+	<meta name="astro-view-transitions-fallback" content="animate">
+	<title>Pensum - Ingeniería de Sistemas</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="bg-bgDark2">
+	<main>
+		<div id="navegacion">
+			<nav class="w-full h-20 flex flex-col justify-center items-center fixed bg-white z-40"
+				aria-label="Main navigation">
+				<div class="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
+					<div><a href="#home" aria-label="Home">
+							<div class="flex justify-start items-center grow basis-0">
+								<div class="text-black mr-2 text-6xl">
+									<img src="./images/logo.svg" alt="Logo" width="100" height="60" />
+								</div>
+								<div class="text-black font-[&#x27;Inter&#x27;] font-bold text-xl">Ingeniería de
+									sistemas</div>
+							</div>
+						</a></div>
+					<div>
+
+						<div class="hidden lg:flex h-full pl-12 pb-2">
+							<a class="text-black lg:text-base text-2xl leading-6 mr-4 ml-4  2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+								href="#divTitulo" aria-label="Home">Plan de estudios</a>
+							<a class="text-black lg:text-base text-2xl leading-6 mr-4 ml-4  2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+								href="#rutas" aria-label="Rutas de formación">Rutas de formación</a>
+							<a class="text-black lg:text-base text-2xl leading-6 mr-4 ml-4  2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
+								href="#antiguo" aria-label="Estudiantes antiguos">Estudiantes antiguos</a>	
+						</div>
+					</div>
+					<div
+						class="lg:hidden flex flex-col px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-bgLight2">
+						<div class="w-5 h-0.5 bg-gray-600 mb-1"></div>
+						<div class="w-5 h-0.5 bg-gray-600 mb-1"></div>
+						<div class="w-5 h-0.5 bg-gray-600 "></div>
+					</div>
+				</div>
+			</nav>
+		</div> <!--navegacion:end-->				
+
+		<div data-main >
+			<div id="divTitulo">
+				<h1 id="hTitulo" class ="titulos" >
+					Plan de Estudios - Ingeniería de sistemas			
+				</h1>
+				<p>La siguiente malla corresponde a las asignaturas que un estudiante matriculado en el Proyecto curricular en Ingeniería de 
+					sistemas debe tomar para obtener el título de "Ingeniero de sistemas".</p>
+				<p>Esta malla está organizada en 9 niveles y cada nivel corresponde a un semestre o periodo académico. Sin embargo, cada 
+					estudiante organiza su tiempo y puede variar sus créditos académicos por semestre.	</p>
+					<br>
+				<p>Si quiere ver el contenido (syllabus) de cada materia, de click sobre la materia a consultar.</p>
+				
+
+			</div>			
+
+			<div id="pensum" data-cuerpo>
+				<!-- Se crea con el script -->
+			</div>
+
+			<div class="barra-categorias">
+				<button class="categoria CB ">Ciencias básicas<!-- --> </button>
+				<button class="categoria BI ">Básicas de ingeniería<!-- --> </button>
+				<button class="categoria AI ">Aplicadas de ingeniería<!-- --> </button>
+				<button class="categoria CO ">Complementario<!-- --> </button>
+				<button class="categoria EX ">Extrínsecas<!-- --> </button>
+			</div>
+
+			<p data-cuerpo>Total de Créditos: 150</p>
+		</div>
+
+		<div id="rutas">
+			<h2 class ="titulos">Rutas de formación (RF)</h2>
+
+			<p>Los nuevos ejes de formación permiten que el ingeniero de sistemas graduado adquiera una sólida comprensión en áreas clave como el desarrollo de software, la gestión de datos, las redes de comunicación, la administración de proyectos tecnológicos y la inteligencia artificial.</p>
+			<p>Las rutas de formación son las alternativas que elige el estudiante para desarrollar o fortalecer un área de conocimiento en su formación profesional.</p>
+			<p>Estas son el eje principal de la actualización curricular donde el estudiante elige dentro de un abanico de alternativas de profundización actualizadas, una opción acorde a sus intereses y propósitos como futuro profesional. Estas opciones son el propósito de la flexibilidad curricular.</p>			
+			<p>El estudiante escogerá la de su preferencia y debe terminar las asignaturas relacionadas a ella.</p>
+			<br><p>Las siguientes son las rutas de formación que ofrece el propyecto curricular. Si da click sobre cualquiera de estas opciones, verá en la malla curricular las materias obligatorias de la Rf seleccionada (Por defecto, se verá la generalidad en la malla):</p>
+			<ul>
+				<li><span id="rf0">General (Sin especificar RF)</span></li>
+				<li><span id="rf1">Análisis, diseño y construcción de software</span></li>
+				<li><span id="rf2">Ingeniería de datos</span></li>
+				<li><span id="rf3">Ciencia de sistemas</span></li>
+				<li><span id="rf4">Redes de datos</span></li>
+				<li><span id="rf5">Planeación y gestión de proyectos de TI</span></li>
+			</ul>			
+		</div>
+		
+
+		<a target="_blank" href="https://sgral.udistrital.edu.co/xdata/ca/res_2023-077.pdf" data-main>Resolución N° 077
+			de 2023 por la cual se aprueba el nuevo plan de estudios para el
+			proyecto curricular de Ingeniería de Sistemas.</a>
+		<img id="fondo" src="images/logo.svg" alt="">
+
+		<div id="antiguo">			
+			<h2 class ="titulos">Soy un estudiante antiguo</h2>
+			<p>Son aquellos estudiantes que se hayan matriculado hasta el periodo lectivo 2024-3 en el proyecto curricular en Ingeniería de Sistemas.</p>
+			<p>Estos estudiantes ingresaron con el anterior plan de estudios y se les garantizará la culminación de sus estudios con el plan de estudios con el que ingresó.</p>
+			<p>Sin embargo, si desea cambiar al plan de estudios actualizado haga click en el siguiente botón para mayor información. Para los estudiantes actualmente matriculados, el proceso de cambio de plan de estudios es VOLUNTARIO. </p>
+			<p>El plan de estudios actualizado aplicará para los estudiantes que voluntariamente hayan decidido hacer la transición y para los matriculados de nuevo ingreso desde 2025-1.</p>
+
+			<ul><li><span><a href="antiguo/index.html">Soy un estudiante con el anterior plan de estudios</a></span></li></ul>
+		</div>
+		
+
+		<dialog id="dialogo">
+			<main>
+				<a id="btnClose" class="close">X</a>
+				<h2 id="dlgTitulo"> </h2>
+				<div id="dlgContenido"></div>
+			</main>
+		</dialog>
+	</main>
+</body>
+<script src="js/app.js"></script>
+
+</html>

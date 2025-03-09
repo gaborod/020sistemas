@@ -1,0 +1,104 @@
+{
+  "niveles": [
+    {
+      "nombre": "Electivas de 1 crédito",
+      "materias": [        
+        {
+          "tipo": "EX",
+          "codigo": "468",
+          "nombre": "INTRODUCCIÓN A LA TEORÍA DE NÚMEROS",
+          "creditos": 1,
+          "trabajoDirecto": 2,
+          "trabajoColaborativo": 0,
+          "trabajoAutonomo": 1,
+          "ref": ""
+        },
+        {
+          "tipo": "EX",
+          "codigo": "",
+          "nombre": "HUMANIDADES DIGITALES",
+          "creditos": 1,
+          "trabajoDirecto": 2,
+          "trabajoColaborativo": 0,
+          "trabajoAutonomo": 1,
+          "ref": ""
+        },
+        {
+          "tipo": "EX",
+          "codigo": "",
+          "nombre": "ECOLOGÍA Y SOCIEDAD",
+          "creditos": 1,
+          "trabajoDirecto": 2,
+          "trabajoColaborativo": 0,
+          "trabajoAutonomo": 1,
+          "ref": ""
+        }
+      ]
+    },
+    {
+      "nombre": "Electivas de 2 créditos",
+      "materias": [
+        {
+          "tipo": "EX",
+          "codigo": "414",
+          "nombre": "FOTOGRAFÍA",
+          "creditos": 2,
+          "trabajoDirecto": 2,
+          "trabajoColaborativo": 0,
+          "trabajoAutonomo": 4,
+          "ref": ""
+        },
+        {
+          "tipo": "EX",
+          "codigo": "433",
+          "nombre": "REALIZACIÓN AUDIOVISUAL",
+          "creditos": 2,
+          "trabajoDirecto": 2,
+          "trabajoColaborativo": 0,
+          "trabajoAutonomo": 4,
+          "ref": ""
+        },
+        {
+          "tipo": "EX",
+          "codigo": "440",
+          "nombre": "COMPOSICIÓN FOTOGRÁFICA",
+          "creditos": 2,
+          "trabajoDirecto": 2,
+          "trabajoColaborativo": 0,
+          "trabajoAutonomo": 4,
+          "ref": ""
+        },
+        {
+          "tipo": "EX",
+          "codigo": "466",
+          "nombre": "TÉCNICAS DE ESTUDIO",
+          "creditos": 2,
+          "trabajoDirecto": 2,
+          "trabajoColaborativo": 0,
+          "trabajoAutonomo": 4,
+          "ref": ""
+        },
+        {
+          "tipo": "EX",
+          "codigo": "16104",
+          "nombre": "INTRODUCCIÓN A LA CIENCIA DE DATOS EN INGENIERÍA DE SISTEMAS",
+          "creditos": 2,
+          "trabajoDirecto": 2,
+          "trabajoColaborativo": 0,
+          "trabajoAutonomo": 4,
+          "ref": ""
+        },
+        {
+          "tipo": "EX",
+          "codigo": "16105",
+          "nombre": "INTRODUCCIÓN A LA DIRECCIÓN DE PROYECTOS",
+          "creditos": 2,
+          "trabajoDirecto": 2,
+          "trabajoColaborativo": 0,
+          "trabajoAutonomo": 4,
+          "ref": ""
+        }
+      ]
+    }
+  ]
+}
